@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #FFF9F5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    margin: 66px 0 76px;
+    color: #462B20;
+    text-align: center;
+    font-family: "Instrument Serif";
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -0.58px;
+}
+
+.decor_wrapper {
+    display: flex;
+    gap: 120px;
+}
+
+.decor {
+    margin-top: 54px;
+    max-width: 510px;
+    flex-shrink: 0;
+}
+
+.decor .decor_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.dropdowns {
+    margin-top: 24px;
+}
+
+.dropdown {
+    margin: 10px 0;
+    border-top: 1px solid #F3EAE5;
+    padding: 10px 0;
+}
+
+.dropdown-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown_title {
+    color: #462B20;
+    font-family: "Instrument Serif";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.25s ease-in-out, padding 0.25s ease-in-out;
+}
+
+.dropdown-content p {
+    color: rgba(66, 41, 31, 0.85);
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.dropdown-content.open {
+    max-height: 500px;
+    padding-top: 10px;
+}
+
+.dropdown-content p {
+    margin: 10px 0;
+}
+
+.arrow {
+    transition: transform 0.25s ease-in-out;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.floral {
+    width: 706px;
+}
+
+.floral_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .decor_wrapper {
+        gap: 80px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin: 50px 0 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .decor_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .decor,
+    .floral {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 42px;
+        margin: 40px 0 50px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .title {
+        font-size: 36px;
+        margin: 30px 0 40px;
+    }
+
+    .dropdown-header {
+        font-size: 1em;
+    }
+
+    .dropdown_title {
+        font-size: 22px;
+    }
+
+    .decor_wrapper {
+        gap: 40px;
+    }
+}

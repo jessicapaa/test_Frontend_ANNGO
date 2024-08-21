@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Floral & Decor</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/page2.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Floral & Decor</h1>
+            <div class="decor_wrapper">
+                <div class="decor">
+                    <a href="#!">
+                        <img
+                            src="assets/img/floral.png"
+                            alt="loading..."
+                            class="decor_img"
+                        />
+                    </a>
+
+                    <div class="dropdowns">
+                        <div class="dropdown">
+                            <div class="dropdown-header">
+                                <h3 class="dropdown_title">Floral</h3>
+                                <span class="arrow">
+                                    <img
+                                        src="assets/svg/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                            <div class="dropdown-content">
+                                <p>
+                                    The Design is the imagination, creativity,
+                                    and inspiration that makes your event
+                                    unique. We work closely with you to sleuth
+                                    out your style and then use that insight to
+                                    develop every aesthetic component of your
+                                    event from stationery and lighting to
+                                    flowers and furniture.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="dropdown-header">
+                                <h3 class="dropdown_title">Decor selection</h3>
+                                <span class="arrow">
+                                    <img
+                                        src="assets/svg/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                            <div class="dropdown-content">
+                                <p>Content for Decor selection...</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="dropdown-header">
+                                <h3 class="dropdown_title">Hair & makeup</h3>
+                                <span class="arrow">
+                                    <img
+                                        src="assets/svg/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                            <div class="dropdown-content">
+                                <p>Content for Hair & makeup...</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="dropdown-header">
+                                <h3 class="dropdown_title">Lighting & Sound</h3>
+                                <span class="arrow">
+                                    <img
+                                        class="arrow"
+                                        src="assets/svg/arrow_down.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                            <div class="dropdown-content">
+                                <p>Content for Lighting & Sound...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floral">
+                    <img
+                        src="assets/img/decor.png"
+                        alt="loading..."
+                        class="floral_img"
+                    />
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var headers = document.querySelectorAll(".dropdown-header");
+
+                headers.forEach(function (header) {
+                    header.addEventListener("click", function () {
+                        toggleDropdown(header);
+                    });
+                });
+
+                function toggleDropdown(header) {
+                    var content = header.nextElementSibling;
+                    var arrow = header.querySelector(".arrow");
+
+                    if (content.classList.contains("open")) {
+                        closeDropdown(content, arrow);
+                    } else {
+                        openDropdown(content, arrow);
+                    }
+                }
+
+                function openDropdown(content, arrow) {
+                    content.classList.add("open");
+                    arrow.classList.add("open");
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+
+                function closeDropdown(content, arrow) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    setTimeout(() => {
+                        content.classList.remove("open");
+                        arrow.classList.remove("open");
+                        content.style.maxHeight = "0";
+                    }, 10);
+                }
+            });
+        </script>
+    </body>
+</html>

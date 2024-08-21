@@ -1,0 +1,127 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ html {
+     font-family: "Poppins", sans-serif;
+ }
+
+ body {
+     background: #FFFDF4;
+ }
+
+ .container {
+     width: 100%;
+     margin: 0 auto;
+     padding: 70px 50px;
+
+ }
+
+ .courses {}
+
+ .course_title {
+     color: #374639;
+     font-size: 45px;
+     font-weight: 400;
+     line-height: 53px;
+     letter-spacing: -2.25px;
+ }
+
+ .course_desc {
+     margin-top: 20px;
+     margin-bottom: 40px;
+     color: #3F514B;
+     font-size: 19px;
+     font-weight: 400;
+     line-height: 27px;
+     max-width: 520px;
+ }
+
+ .course_list {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 22px;
+ }
+
+ .course_item {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+     transition: all 0.6s ease;
+ }
+
+ .course_item:hover {
+     box-shadow: 10px 10px 5px 0px rgba(10, 10, 10, 0.2);
+ }
+
+ .course_item_img {
+     width: 100%;
+     object-fit: cover;
+     height: auto;
+
+ }
+
+ .course_item_title {
+     color: #414F42;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 25px;
+     letter-spacing: -0.4px;
+     text-decoration: none;
+     margin-bottom: 8px;
+ }
+
+ .course_item_title:hover {
+     color: #00af0c;
+ }
+
+ .course_item_desc {
+     color: #3F514B;
+     font-size: 14px;
+     line-height: 24px;
+     max-width: 308px;
+ }
+
+ .course_item_sell {
+     margin-top: 6px;
+     padding-bottom: 20px;
+     border-bottom: 2px solid #ECEDEC;
+ }
+
+ .course_item_sale {
+     color: #72776C;
+     font-kerning: none;
+     font-size: 13px;
+     line-height: 18px;
+     letter-spacing: 0.13px;
+     text-decoration: line-through;
+ }
+
+ .course_item_price {
+     color: #3F514B;
+     font-size: 18px;
+     line-height: 23px;
+ }
+
+ .route {
+     margin-top: 12px;
+     padding-bottom: 8px;
+     border-bottom: 2px solid #ECEDEC;
+     display: flex;
+     align-items: center;
+     gap: 24px;
+ }
+
+ .route_title {
+     color: #72776C;
+     font-size: 15px;
+     line-height: 18px;
+     letter-spacing: 0.15px;
+     text-transform: uppercase;
+ }
+
+ .route_desc {
+     color: #4E5C58;
+     font-size: 14px;
+     line-height: 24px;
+ }

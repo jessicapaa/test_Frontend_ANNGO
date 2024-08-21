@@ -1,0 +1,122 @@
+/* PC */
+
+@media screen and (max-width: 1200px) {
+    .course_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course_title {
+        font-size: 36px;
+    }
+
+    .course_desc {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .course_list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+
+/* TABLE & MOBILE */
+@media screen and (max-width: 991.98px) {
+    .course_list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .course_item {
+        margin-bottom: 16px;
+    }
+
+    .course_desc {
+        margin-bottom: 30px;
+    }
+}
+
+/* TABLE */
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    .course_list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .course_title {
+        font-size: 30px;
+    }
+
+    .course_desc {
+        font-size: 17px;
+    }
+
+    .course_item_desc {
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 575.98px) {
+
+    .course_list {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .course_item {
+        margin-bottom: 16px;
+    }
+
+    .course_title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .course_desc {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .course_item_body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .course_item_title {
+        font-size: 18px;
+    }
+
+    .course_item_sell,
+
+    .routes {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .route_title {
+        font-size: 13px;
+    }
+
+    .route_desc {
+        font-size: 12px;
+    }
+
+    .course_item_sell {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course_item_sale {
+        font-size: 12px;
+    }
+
+    .course_item_price {
+        font-size: 16px;
+    }
+}
